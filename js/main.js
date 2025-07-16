@@ -81,6 +81,12 @@ AOS.init({
 	})
 })();
 
+setTimeout(() => {
+    $('.animsition').animate({ opacity: 1 }, 500); // smooth fade in over 0.5s
+    $('.preloader').fadeOut(500);                  // smooth fade out over 0.5s
+}, 1000);
+
+
 /* 3. Mobile menu */
 (function() {
 	var menuOpenBtn = $('.menu-toggle');
